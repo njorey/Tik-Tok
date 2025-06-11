@@ -1,0 +1,68 @@
+<!-- PASSWORD SECTION -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>password</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="password-icons">
+            <div class="left-arrow">
+                <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+            </div>
+            <div class="circle-question">
+                <i class="fa-solid fa-circle-question"></i>
+            </div>
+        </div>
+
+        <div class="enter-password-interface">
+            <h3>Enter password</h3>
+        </div>
+
+        <form action="">
+              <!-- Clearable Input -->
+
+        <!-- Password Input with Toggle -->
+        <div class="input-container">
+            <input type="password" id="inputField" placeholder="Enter password">
+            <button class="clear-btn" onclick="clearInput()" aria-label="Clear input">✖</button>
+            <button class="toggle-btn" onclick="togglePassword()" aria-label="Toggle       password visibility">
+            <i id="toggleIcon" class="fa-solid fa-eye"></i>
+            </button>
+        </div>
+
+        <div class="confirm_button">
+             <button><input class="confirm_button_click" type="submit" value="confirm"></button>
+        </div>
+        </form>
+
+    
+    <!-- Include Font Awesome for Icons -->
+    <script>
+        // Clear Input Functionality
+        function clearInput() {
+        const inputField = document.getElementById('inputField');
+        inputField.value = '';
+        }
+
+        // Toggle Password Visibility
+        function togglePassword() {
+        const inputField = document.getElementById('inputField');
+        const toggleIcon = document.getElementById('toggleIcon');
+        if (inputField.type === 'password') {
+            inputField.type = 'text';
+            toggleIcon.className = 'fa-solid fa-eye-slash'; // Change icon to 'eye-slash'
+        } else {
+            inputField.type = 'password';
+            toggleIcon.className = 'fa-solid fa-eye'; // Change icon back to 'eye'
+        }
+        }
+    </script>
+
+    <footer> <p>@TikTok2025</p></footer>    
+    </body>
+</html>

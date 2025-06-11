@@ -1,0 +1,46 @@
+<!-- enter username user interface -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+    <div class="left-arrow">
+            <i class="fa-solid fa-arrow-left"></i>
+    </div>
+    <div class="log-in-interface">
+        <h3>Enter email address</h3>
+        <p>We'll email you a code to verify your updated email address</p>
+    </div>
+
+     <!-- start of form section -->
+    <form action="">
+        <div class="clearable-input">
+            <input type="text" id="clearable" placeholder="Email address">
+            <button class="clear-btn" onclick="clearInput()">✖</button>
+        </div>
+
+        <div class="confirm_button">
+             <button><input class="confirm_button_click" type="submit" value="confirm"></button>
+        </div>
+    </form>
+
+    
+
+     <!-- JS SECTION -->
+    <script>
+         function clearInput() {
+         document.getElementById('clearable').value = '';
+    }
+  </script>
+
+    </main>
+
+     <footer> <p>@TikTok2025</p></footer>
+</body>
+</html>
